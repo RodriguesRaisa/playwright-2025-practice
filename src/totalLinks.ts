@@ -1,4 +1,4 @@
-import {Browser,chromium,firefox,webkit,Locator,Page,selectors} from "@playwright/test";
+import {Browser,chromium,firefox,webkit,Locator,Page,selectors,LocatorScreenshotOptions} from "@playwright/test";
 
 (async () => {
    let browser:Browser = await chromium.launch({headless:false, channel:'chrome'}); 
