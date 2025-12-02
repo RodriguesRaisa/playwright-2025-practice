@@ -7,7 +7,6 @@ import {Browser,chromium,firefox,webkit,Locator,Page} from "@playwright/test";
    await page.goto('https://www.geeksforgeeks.org/');
    let footerLinks:string[] = await page.locator(`div.footer-container_right a[href]`).allInnerTexts();
     console.log(footerLinks.length);
-   console.log(footerLinks);
    for(let e of footerLinks)
    {
     console.log(e);
